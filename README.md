@@ -17,7 +17,7 @@ React, React Router, Create React App, plain CSS.
 2. Install dependencies with npm install.
 3. Start the app with npm start.
 
-#How it works
+# How it works
 The search term, the list of drinks and the loading flag all live in one place, src/context.js. The provider watches the search term and calls the API again whenever it changes. It also renames the long API fields into short ones, so the rest of the app works with id, name and image.
 
 The search form pushes what you type into that shared state. The list reads the same state and picks one of three things to show: the spinner, a short message when nothing matched, or the grid of cards. The single drink page is on its own and fetches by the id it reads from the address.
